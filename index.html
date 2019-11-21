@@ -1,0 +1,130 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+
+  <title>Game</title>
+</head>
+
+<body>
+  <nav class="navbar bg-dark">
+    <div class="container-fluid  justify-content-center align-items-center ">
+      <a href="#" class="navbar-brand ">Speed Typing Contest</a>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="card">
+          <div class="bg">
+            <img src="img/1.jpg" class="img-responsive rounded-circle img-thumbnail my-thumbs" alt="">
+          </div>
+          <div class="card-body">
+            <textarea id="userArea" name="name" class="form-control" rows="10" cols="45"
+              onpaste="return false"></textarea>
+          </div>
+
+          <div class="cardFooter">
+            <button id="userButton" type="button" class="btn btn-warning form-control" name="button">Position :
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card">
+          <div class="bg">
+            <img src="img/2.jpg" class="img-responsive rounded-circle img-thumbnail my-thumbs" alt="">
+          </div>
+          <div class="card-body">
+            <textarea id="comp1" name="name" class="form-control" rows="10" cols="45" disabled></textarea>
+          </div>
+
+          <div class="cardFooter">
+            <button id="comp1Button" type="button" class="btn btn-warning form-control" name="button">Player2 - Position
+              : </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card">
+          <div class="bg">
+            <img src="img/3.jpg" class="img-responsive rounded-circle img-thumbnail my-thumbs" alt="">
+          </div>
+          <div class="card-body">
+            <textarea id="comp2" name="name" class="form-control" rows="10" cols="45" disabled></textarea>
+          </div>
+
+          <div class="cardFooter">
+            <button id="comp2Button" type="button" class="btn btn-warning form-control" name="button">Player3 - Position
+              : </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card">
+          <div class="bg">
+            <img src="img/4.jpg" class="img-responsive rounded-circle img-thumbnail my-thumbs" alt="">
+          </div>
+          <div class="card-body">
+            <textarea id="comp3" name="name" class="form-control" rows="10" cols="45" disabled></textarea>
+          </div>
+          <div class="cardFooter">
+            <button id="comp3Button" type="button" class="btn btn-warning form-control" name="button">Player4 - Position
+              : </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 offset-lg-4">
+        <button id="startButton" class="btn btn-success form-control" type="button" name="button">Start</button>
+      </div>
+    </div>
+
+    <div id="info" class=" row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="jumbotron text-center">
+          <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p id="text">Enter Your Name</p>
+            <input id="name" type="text">
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success okName" data-dismiss="modal">Lets get typing!</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
