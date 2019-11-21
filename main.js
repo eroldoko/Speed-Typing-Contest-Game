@@ -177,7 +177,6 @@ function userFinished(e) {
         userBtn.className = "btn btn-success form-control";
         userBtn.innerHTML = name.value + " - Position : " + position;
         if (position == 1 && level == 1) {
-
           clearIntervals()
           info.innerHTML = " ";
           info.innerHTML = "Winner " + name.value
@@ -191,7 +190,6 @@ function userFinished(e) {
         userBtn.className = "btn btn-danger form-control"
       }
     } else if (level == 2) {
-
       if (userText == text2[rand]) {
         position++;
         posArray.push(position)
@@ -213,7 +211,6 @@ function userFinished(e) {
         userBtn.className = "btn btn-danger form-control"
       }
     } else if (level == 3) {
-
       if (userText == text3[rand]) {
         position++;
         posArray.push(position)
