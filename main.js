@@ -97,7 +97,7 @@ function chooseText(texts) {
   infoDiv.style.display = "block";
   userArea.focus();
 }
-//Player's 1 begining of typing, and checking progress
+//generating Player's 1 start of typing, and checking progress
 function comp1Start(texts, a, b) {
   let textArray = texts[rand].split(""); 
   loop1 = setInterval(() => {
@@ -118,7 +118,7 @@ function comp1Start(texts, a, b) {
     }
   }, Math.ceil(Math.random() * a + b))
 }
-//Player's 2 begining of typing, and checking progress
+//generating Player's 2 start of typing, and checking progress
 function comp2Start(texts, a, b) {
 
   let textArray = texts[rand].split("");
@@ -141,7 +141,7 @@ function comp2Start(texts, a, b) {
     }
   }, Math.ceil(Math.random() * a + b))
 }
-//Player's 3 begining of typing, and checking progress
+//generating Player's 3 start of typing, and checking progress
 function comp3Start(texts, a, b) {
   //console.log(texts[rand]);
   let textArray = texts[rand].split("");
